@@ -6,6 +6,8 @@
  * Time: 13:57
  */
 
+$actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_GET['type'];
+
 ?>
 
 
@@ -18,19 +20,17 @@
         <!-- Header part  -->
         <?php include "header.php";?>
 
-
-
         <div class="content-area prodcuts">
-
             <div class="row">
                 <div class="container">
                     <div class="col-sm-2 col-md-2 col-lg-2">
                         <div class="sidebar-products-main">
-
+                            <h2>Filter by :</h2>
+                            <a role="button" href="<?php echo $actual_link?>">Click here to reset filters</a>
                             <div class="sidebar-single">
                                 <div class="sidebar-title">
                                     <a data-toggle="collapse"  class="pointer" aria-expanded="true" data-target="#brandCollapse" aria-controls="#brandCollapse">
-                                        <span class="pull-left title-sidebar">Filter By Brand</span>
+                                        <span class="pull-left title-sidebar">Price</span>
 
                                         <span class="pull-right"><i class="fa fa-plus"></i></span>
                                         <span class="pull-right"><i class="fa fa-minus"></i></span>
@@ -38,35 +38,25 @@
                                     </a>
                                 </div> <!--End Sidebar title div-->
 
-                                <div id="brandCollapse" class="collapse in">
-                                    <form action="products_submit.php" method="get" accept-charset="utf-8">
+                                <div id="brandCollapse" class="collapse out">
                                         <input type="search" name="brand_name" class="form-control" value="" placeholder="Type Brand Name" />
-
-                                        <input type="checkbox" id="c1" name="prodcut_id[]" />
-                                        <label for="c1"><span></span>T-Shirt</label><br />
-
-                                        <input type="checkbox" id="c2" name="prodcut_id[]" />
-                                        <label for="c2"><span></span>Pant</label><br />
-
-                                        <input type="checkbox" id="c3" name="prodcut_id[]" />
-                                        <label for="c3"><span></span>Genji</label><br />
-
-                                        <input type="checkbox" id="c4" name="prodcut_id[]" />
-                                        <label for="c4"><span></span>Full Shirt</label><br />
-
-                                        <input type="checkbox" id="c5" name="prodcut_id[]" />
-                                        <label for="c5"><span></span>Half Shirt</label><br />
-
-                                        <input type="submit" name="submit_brand_search" class="btn btn-red pull-right btn-sm" value="Search">
+                                        <br>
+                                        <a role="button" onclick="addOrUpdateUrlParam('priceMin',0,'priceMax',200)"><span></span>UNDER 200 €</a><br />
+                                        <br>
+                                        <a role="button" onclick="addOrUpdateUrlParam('priceMin',200,'priceMax',450)"><span></span>200 - 450 €</a><br />
+                                        <br>
+                                        <a role="button" onclick="addOrUpdateUrlParam('priceMin',450,'priceMax',800)"><span></span>450 - 800€</a><br />
+                                        <br>
+                                        <a role="button" onclick="addOrUpdateUrlParam('priceMin',800,'priceMax',9999)"><span></span>ABOVE 800 €</a><br />
+                                        <br>
                                         <div class="clearfix"></div>
-                                    </form>
                                 </div>
                             </div> <!--End Single Sidebar-->
 
                             <div class="sidebar-single">
                                 <div class="sidebar-title">
-                                    <a data-toggle="collapse" class="pointer" aria-expanded="true" data-target="#brandPriceCollapse" aria-controls="#brandPriceCollapse">
-                                        <span class="pull-left title-sidebar">Filter By Price</span>
+                                    <a data-toggle="collapse"  class="pointer" aria-expanded="true" data-target="#producer" aria-controls="#producerCollapse">
+                                        <span class="pull-left title-sidebar">Producer</span>
 
                                         <span class="pull-right"><i class="fa fa-plus"></i></span>
                                         <span class="pull-right"><i class="fa fa-minus"></i></span>
@@ -74,47 +64,24 @@
                                     </a>
                                 </div> <!--End Sidebar title div-->
 
-                                <div id="brandPriceCollapse" class="collapse in">
-
-                                    <form action="products_submit.php" method="get" accept-charset="utf-8">
-
-                                        <input type="checkbox" id="price1" name="prodcut_price[]" />
-                                        <label for="price1"><span></span>0-100TK</label><br />
-
-                                        <input type="checkbox" id="price2" name="prodcut_price[]" />
-                                        <label for="price2"><span></span>100-500TK</label><br />
-
-                                        <input type="checkbox" id="price3" name="prodcut_price[]" />
-                                        <label for="price3"><span></span>500-1000TK</label><br />
-
-                                        <input type="checkbox" id="price4" name="prodcut_price[]" />
-                                        <label for="price4"><span></span>1000-2000TK</label><br />
-
-                                        <input type="checkbox" id="price5" name="prodcut_price[]" />
-                                        <label for="price5"><span></span>2000-500TK</label><br />
-
-                                        <input type="checkbox" id="price6" name="prodcut_price[]" />
-                                        <label for="price6"><span></span>5000-1000TK</label><br />
-
-                                        <input type="checkbox" id="price7" name="prodcut_price[]" />
-                                        <label for="price7"><span></span>10000-20000TK</label><br />
-
-                                        <input type="checkbox" id="price9" name="prodcut_price[]" />
-                                        <label for="price9"><span></span>20000-100000TK</label><br />
-
-                                        <input type="checkbox" id="price10" name="prodcut_price[]" />
-                                        <label for="price10"><span></span>100000- + TK</label><br />
-
-                                        <input type="submit" name="submit_brand_search" class="btn btn-red pull-right btn-sm" value="Search">
-                                        <div class="clearfix"></div>
-                                    </form>
+                                <div id="producer" class="collapse out">
+                                    <br>
+                                    <a role="button" onclick="addParameter('producer','ceva')"><span></span>SAMSUNG</a><br />
+                                    <br>
+                                    <a role="button" onclick="addParameter('producer','LAVA')"><span></span>LALA</a><br />
+                                    <br>
+                                    <a role="button" onclick="addParameter('producer','LAVA2')"><span></span>UNDERCONST</a><br />
+                                    <br>
+                                    <a role="button" onclick="addParameter('producer','LAVA3')"><span></span>UNDERCONST</a><br />
+                                    <br>
+                                    <div class="clearfix"></div>
                                 </div>
-                            </div> <!--End Single Sidebar-->
+                            </div> <!--End Second Sidebar-->
 
                             <div class="sidebar-single">
                                 <div class="sidebar-title">
-                                    <a data-toggle="collapse" class="pointer" aria-expanded="true" data-target="#productColorCollapse" aria-controls="#productColorCollapse">
-                                        <span class="pull-left title-sidebar">Filter By Color</span>
+                                    <a data-toggle="collapse"  class="pointer" aria-expanded="true" data-target="#size" aria-controls="#sizeController">
+                                        <span class="pull-left title-sidebar">Size</span>
 
                                         <span class="pull-right"><i class="fa fa-plus"></i></span>
                                         <span class="pull-right"><i class="fa fa-minus"></i></span>
@@ -122,86 +89,50 @@
                                     </a>
                                 </div> <!--End Sidebar title div-->
 
-                                <div id="productColorCollapse" class="collapse in">
-
-                                    <form action="products_submit.php" method="get" accept-charset="utf-8">
-
-                                        <input type="checkbox" id="color0" name="prodcut_color[]" />
-                                        <label for="color0" style="color:#9c9"><span></span>White</label><br />
-
-                                        <input type="checkbox" id="color1" name="prodcut_color[]" />
-                                        <label for="color1" style="color:#f00"><span></span>Red</label><br />
-
-                                        <input type="checkbox" id="color2" name="prodcut_color[]" />
-                                        <label for="color2" style="color:#00f"><span></span>Blue</label><br />
-
-                                        <input type="checkbox" id="color3" name="prodcut_color[]" />
-                                        <label for="color3" style="color:#008000"><span></span>Green</label><br />
-
-                                        <input type="checkbox" id="color4" name="prodcut_color[]" />
-                                        <label for="color4" style="color:#ffc0cb"><span></span>Pink</label><br />
-
-                                        <input type="checkbox" id="color5" name="prodcut_color[]" />
-                                        <label for="color5" style="color:#ffd700"><span></span>Gold</label><br />
-
-                                        <input type="checkbox" id="color6" name="prodcut_color[]" />
-                                        <label for="color6" style="color:#ffa500"><span></span>Orange</label><br />
-
-                                        <input type="checkbox" id="color7" name="prodcut_color[]" />
-                                        <label for="color7" style="color:#ffa500"><span></span>Other</label><br />
-                                        <input type="name" id="color7" class="form-control" placeholder="Color name" name="prodcut_color[]" /><br />
-
-
-                                        <input type="submit" name="submit_brand_search" class="btn btn-red pull-right btn-sm" value="Search">
-                                        <div class="clearfix"></div>
-                                    </form>
+                                <div id="size" class="collapse out">
+                                    <br>
+                                    <a role="button" onclick="addOrUpdateUrlParam('sizeMin',70,'sizeMax',100)"><span></span>70 - 100 CM</a><br />
+                                    <br>
+                                    <a role="button" onclick="addOrUpdateUrlParam('sizeMin',100,'sizeMax',120)"><span></span>100 - 120 CM</a><br />
+                                    <br>
+                                    <a role="button" onclick="addOrUpdateUrlParam('sizeMin',120,'sizeMax',140)"><span></span>120 - 140 CM</a><br />
+                                    <br>
+                                    <a role="button" onclick="addOrUpdateUrlParam('sizeMin',140,'sizeMax',9999)"><span></span>ABOVE 140 CM</a><br />
+                                    <br>
+                                    <div class="clearfix"></div>
                                 </div>
-                            </div> <!--End Single Sidebar-->
+                            </div> <!--End Third Sidebar-->
 
                             <div class="sidebar-single">
                                 <div class="sidebar-title">
                                     <a data-toggle="collapse" class="pointer" aria-expanded="true" data-target="#productReviewCollapse" aria-controls="#productReviewCollapse">
-                                        <span class="pull-left title-sidebar">Filter By Review</span>
-
+                                        <span class="pull-left title-sidebar">Review</span>
                                         <span class="pull-right"><i class="fa fa-plus"></i></span>
                                         <span class="pull-right"><i class="fa fa-minus"></i></span>
                                         <div class="clearfix"></div>
                                     </a>
                                 </div> <!--End Sidebar title div-->
 
-                                <div id="productReviewCollapse" class="collapse in">
+                                <div id="productReviewCollapse" class="collapse out">
 
-                                    <form action="products_submit.php" method="get" accept-charset="utf-8">
-
-                                        <input type="checkbox" id="review1" name="prodcut_review[]" />
-                                        <label for="review1" style="color:#008000"><span></span>
+                                        <a role="button" onclick="addParameter('review',5)" style="color:#008000"><span></span>
                                             <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                                        </label><br />
-                                        <input type="checkbox" id="review2" name="prodcut_review[]" />
-                                        <label for="review2" style="color:#6f6"><span></span>
-                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                                        </label><br />
-                                        <input type="checkbox" id="review3" name="prodcut_review[]" />
-                                        <label for="review3" style="color:#9c9"><span></span>
-                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                                        </label><br />
-                                        <input type="checkbox" id="review4" name="prodcut_review[]" />
-                                        <label for="review4" style="color:#f99"><span></span>
-                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                                        </label><br />
-                                        <input type="checkbox" id="review5" name="prodcut_review[]" />
-                                        <label for="review5" style="color:#fc9"><span></span>
-                                            <i class="fa fa-star"></i>
-                                        </label><br />
-
-
-                                        <input type="submit" name="submit_brand_search" class="btn btn-red pull-right btn-sm" value="Search">
+                                        </a><br />
+                                    <a role="button" onclick="addParameter('review',4)" style="color:#008000"><span></span>
+                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                    </a><br />
+                                    <a role="button" onclick="addParameter('review',3)" style="color:#008000"><span></span>
+                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                    </a><br />
+                                    <a role="button" onclick="addParameter('review',2)" style="color:#008000"><span></span>
+                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                    </a><br />
+                                    <a role="button" onclick="addParameter('review',1)" style="color:#008000"><span></span>
+                                        <i class="fa fa-star"></i>
+                                    </a><br />
                                         <div class="clearfix"></div>
-                                    </form>
                                 </div>
                             </div> <!--End Single Sidebar-->
-
-
 
                         </div>
                     </div>
@@ -228,7 +159,7 @@
                         </div>
                         <div class="all-products">
                             <div class="">
-                                <h2 class="title-div wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">Our Latest Products available</h2>
+                                <h2 class="title-div wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10"><?php if(count($_GET) === 1 && isset($_GET['type'])) { echo "Our latest ".strtoupper($_GET['type'])." TVs are:";} else {echo "Your filtered results: ";}?></h2>
                                 <div class="products">
                                     <div class="row">
 
@@ -658,156 +589,53 @@
 
             </div>
 
-            <div class="featured-products">
-                <div class="container">
-                    <h2 class="title-div wow slideInLeft pull-left" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">Our Top Recommended products</h2><div class="clearfix"></div>
-                    <div class="featured-navigation pull-right">
-                <span class="">
-                    <a class="owl-prev owl-navigaiton"><i class="fa fa-angle-double-right"></i></a>
-                </span>
-                        <span class="stop">
-                    <a class="owl-next owl-navigaiton">||</a>
-                </span>
-                        <span class="">
-                    <a class="owl-next owl-navigaiton"><i class="fa fa-angle-double-left"></i></a>
-                </span>
-
-                    </div>
-                    <div class="clear"></div>
-                    <div class="featured-items">
-                        <!-- Set up your HTML -->
-                        <div class="owl-carousel">
-
-                            <div class="item featured1">
-                                <div class="item-full animated featured1-inner  width0">
-                                    <a href="products.html"><h4>Digital Camera</h4></a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    <h5>200$</h5>
-                                    <a href="products.html" class="btn btn-cart">
-                                        Add To Cart
-                                    </a>
-
-                                </div>
-                                <a href="products.html">
-                                    <img src="images/product-slide/product3.png" class="img img-responsive" alt="Product1">
-                                </a>
-                            </div> <!-- Single Featured Item -->
-
-                            <div class="item featured2">
-                                <div class="item-full animated featured2-inner  width0">
-                                    <a href="products.html"><h4>Digital Camera</h4></a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    <h5>200$</h5>
-                                    <a href="products.html" class="btn btn-cart">
-                                        Add To Cart
-                                    </a>
-
-                                </div>
-                                <a href="products.html">
-                                    <img src="images/product-slide/product1.png" class="img img-responsive" alt="Product1">
-                                </a>
-                            </div> <!-- Single Featured Item -->
-
-                            <div class="item featured3">
-                                <div class="item-full animated featured3-inner  width0">
-                                    <a href="products.html"><h4>Digital Camera</h4></a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    <h5>200$</h5>
-                                    <a href="products.html" class="btn btn-cart">
-                                        Add To Cart
-                                    </a>
-
-                                </div>
-                                <a href="products.html">
-                                    <img src="images/product-slide/product2.png" class="img img-responsive" alt="Product1">
-                                </a>
-                            </div> <!-- Single Featured Item -->
-
-                            <div class="item featured4">
-                                <div class="item-full animated featured4-inner  width0">
-                                    <a href="products.html"><h4>Digital Camera</h4></a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    <h5>200$</h5>
-                                    <a href="products.html" class="btn btn-cart">
-                                        Add To Cart
-                                    </a>
-
-                                </div>
-                                <a href="products.html">
-                                    <img src="images/product-slide/product3.png" class="img img-responsive" alt="Product1">
-                                </a>
-                            </div> <!-- Single Featured Item -->
-
-                            <div class="item featured5">
-                                <div class="item-full animated featured5-inner  width0">
-                                    <a href="products.html"><h4>Digital Camera</h4></a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    <h5>200$</h5>
-                                    <a href="products.html" class="btn btn-cart">
-                                        Add To Cart
-                                    </a>
-
-                                </div>
-                                <a href="products.html">
-                                    <img src="images/product-slide/product4.png" class="img img-responsive" alt="Product1">
-                                </a>
-                            </div> <!-- Single Featured Item -->
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="services-area">
-                <div class="services">
-                    <div class="container">
-                        <div class="ftr-toprow">
-                            <div class="col-md-4 ftr-top-grids wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">
-                                <div class="ftr-top-left pull-left">
-                                    <i class="fa fa-truck" aria-hidden="true"></i>
-                                </div>
-                                <div class="ftr-top-right">
-                                    <h4>FREE DELIVERY</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus justo ac </p>
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                            <div class="col-md-4 ftr-top-grids wow slideInUp" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">
-                                <div class="ftr-top-left pull-left">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                </div>
-                                <div class="ftr-top-right">
-                                    <h4>CUSTOMER CARE</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus justo ac </p>
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                            <div class="col-md-4 ftr-top-grids wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">
-                                <div class="ftr-top-left pull-left">
-                                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                </div>
-                                <div class="ftr-top-right">
-                                    <h4>GOOD QUALITY</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus justo ac </p>
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                            <div class="clearfix"> </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- End Service -->
 
         </div> <!-- End content Area class -->
         <?php include "footer.php"; ?>
     </div> <!-- End wrapper -->
     <!-- Scripts -->
+
+    <script>
+        function addOrUpdateUrlParam(min, value1, max, value2)
+        {
+            var href = window.location.href;
+            var regex = new RegExp("[&\\?]" + min + "=");
+            var regex2 = new RegExp("[&\\?]" + max + "=");
+            if(regex.test(href))
+            {
+                regex = new RegExp("([&\\?])" + min + "=\\d+" + "([&\\?])" + max + "=\\d+");
+                window.location.href = href.replace(regex, "$1" + min + "=" + value1 + "$2" +max + "=" + value2);
+            }
+            else
+            {
+                if(href.indexOf("?") > -1)
+                    window.location.href = href + "&" + min + "=" + value1 + "&" +max + "=" +value2;
+                else
+                    window.location.href = href + "?" + min + "=" + value1 + "&"+ max + "=" +value2;
+            }
+        }
+
+        function addParameter(val, name)
+        {
+            var href = window.location.href;
+            var regex = new RegExp("[&\\?]" + val + "=");
+            if(regex.test(href))
+            {
+                regex = new RegExp("([&\\?])" + val+ "=\\d+");
+                window.location.href = href.replace(regex, "$1" + val + "=" + name);
+            }
+            else
+            {
+                if(href.indexOf("?") > -1)
+                    window.location.href = href + "&" + val + "=" + name;
+                else
+                    window.location.href = href + "?" +val + "=" + name;
+            }
+        }
+
+
+
+    </script>
     <script type="text/javascript" src="../../public/js/jquery.min.js"></script>
     <script type="text/javascript" src="../../public/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="../../public/js/wow.min.js"></script>

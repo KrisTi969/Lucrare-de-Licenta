@@ -10,6 +10,10 @@ $file_name = basename($_SERVER['SCRIPT_FILENAME']);
 $new_path = "";
 if($file_name != "index.php") {
     $new_path = "../../public/";
+    $reddirect_link = "../../app/view/";
+}
+else {
+    $reddirect_link = "";
 }
 ?>
 <div class="header">
@@ -98,20 +102,18 @@ if($file_name != "index.php") {
                                 <div class="wsshoptabing wtsdepartmentmenu clearfix">
                                     <div class="wsshopwp clearfix" style="height: 421px;">
                                         <ul class="wstabitem clearfix">
-                                            <li class=""><span class="wsmenu-click02"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#"><i class="fa fa-television"></i>Electronics Appliances</a>
+                                            <li class=""><span class="wsmenu-click02"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#"><i class="fa fa-television"></i>Electronic Appliances</a>
                                                 <div class="wstitemright clearfix" style="height: auto;">
                                                     <ul class="wstliststy02">
                                                         <li><img src="<?php echo $new_path?>./Megamenu_files/ele-menu-img01.jpg" alt=" "></li>
-                                                        <li class="wstheading">TV &amp; Audio</li>
-                                                        <li><a href="#">4K Ultra HD TVs </a></li>
+                                                        <li class="wstheading">TVs</li>
+                                                        <li><a href="<?php echo $reddirect_link?>TVs.php?type=4k">4K Ultra HD TVs </a></li>
                                                         <li><a href="#">Curved TVs </a></li>
-                                                        <li><a href="#">LED &amp; LCD TVs</a></li>
+                                                        <li><a href="#">LED TVs</a></li>
+                                                        <li><a href="#">LCD TVs</a></li>
                                                         <li><a href="#">OLED TVs</a> <span class="wstmenutag bluetag">Popular</span></li>
                                                         <li><a href="#">Plasma TVs</a></li>
                                                         <li><a href="#">Smart TVs</a></li>
-                                                        <li><a href="#">Home Theater</a></li>
-                                                        <li><a href="#">Wireless &amp; streaming</a></li>
-                                                        <li><a href="#">Stereo System</a></li>
                                                     </ul>
                                                     <ul class="wstliststy02">
                                                         <li><img src="<?php echo $new_path?>./Megamenu_files/ele-menu-img02.jpg" alt=" "></li>
@@ -160,12 +162,12 @@ if($file_name != "index.php") {
                                                     <div class="wstmegamenucoll01 clearfix">
                                                         <div class="wstheading">Monitors <a href="#" class="wstmorebtn">View All</a></div>
                                                         <ul class="wstliststy03">
-                                                            <li><a href="#">50 Inches &amp; Above <span class="wstmenutag greentag">New</span></a></li>
-                                                            <li><a href="#">40 to 49.9 Inches </a></li>
-                                                            <li><a href="#">30 to 39.9 Inches</a></li>
-                                                            <li><a href="#">26 to 29.9 Inches</a></li>
-                                                            <li><a href="#">18 to 19.9 Inches</a></li>
-                                                            <li><a href="#">16 to 17.9 Inches</a></li>
+                                                            <li><a href="#">127 CM &amp; Above <span class="wstmenutag greentag">New</span></a></li>
+                                                            <li><a href="#">102 to 126.9 CM </a></li>
+                                                            <li><a href="#">76 to 101.9 CM</a></li>
+                                                            <li><a href="#">51 to 75.9 CM</a></li>
+                                                            <li><a href="#">46 to 50.9 CM</a></li>
+                                                            <li><a href="#">40 to 45.9 CM</a></li>
                                                         </ul>
                                                         <div class="cl" style="height:8px;"></div>
                                                         <div class="wstheading">Printers <a href="#" class="wstmorebtn">View All</a></div>
