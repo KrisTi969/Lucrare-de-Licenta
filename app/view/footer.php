@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: crys_
+ * Date: 16.02.2018
+ * Time: 11:05
+ */
 $file_name = basename($_SERVER['SCRIPT_FILENAME']);
 
 $new_path = "";

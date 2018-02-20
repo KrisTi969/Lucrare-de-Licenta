@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: crys_
+ * Date: 16.02.2018
+ * Time: 17:31
+ */
 $file_name = basename($_SERVER['SCRIPT_FILENAME']);
 
 $new_path = "";
@@ -6,8 +12,6 @@ if($file_name != "index.php") {
     $new_path = "../../public/";
 }
 ?>
-
-
 <head>
     <title>SkyMobile</title>
     <meta charset="UTF-8">
@@ -17,7 +21,8 @@ if($file_name != "index.php") {
     <!-- CSS links -->
     <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/font-awesome.min.css" />
-
+    <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/datepicker.css" />
     <!-- Animate.css -->
     <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/animate.css" />
 
@@ -30,4 +35,5 @@ if($file_name != "index.php") {
 
     <!-- Main css link -->
     <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/main.css" />
+
 </head>

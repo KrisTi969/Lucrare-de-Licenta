@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <?php include "../app/view/head.php" ?>
@@ -33,7 +31,7 @@
                             <img src="images/slider/black_friday.jpg" alt="Vader" height="" width="1680">
                             <div class="carousel-caption">
                                 <div class="slide-header-text wow rotateIn" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">Turn your looking into an easy price</div> <br />
-                                <a href="../app/view/products.php" class="btn btn-red slider-link wow lightSpeedIn" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">Buy items on sale!</a>
+                                <a href="../app/view/productsRedirect.php" class="btn btn-red slider-link wow lightSpeedIn" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">Buy items on sale!</a>
                             </div>
                         </div>
                     </div>
@@ -68,7 +66,7 @@
 
                         <div class="item featured1">
                             <div class="item-full animated featured1-inner  width0">
-                                <a href="../app/view/products.php"><h4>Digital Camera</h4></a>
+                                <a href="../app/view/productsRedirect.php"><h4>Digital Camera</h4></a>
                                 <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                 <h5>200$</h5>
                                 <a href="../cart.html" class="btn btn-cart">
@@ -76,14 +74,14 @@
                                 </a>
 
                             </div>
-                            <a href="../app/view/products.php">
+                            <a href="../app/view/productsRedirect.php">
                                 <img src="images/product-slide/product3.png" class="img img-responsive" alt="Product1">
                             </a>
                         </div> <!-- Single Featured Item -->
 
                         <div class="item featured2">
                             <div class="item-full animated featured2-inner  width0">
-                                <a href="../app/view/products.php"><h4>Digital Camera</h4></a>
+                                <a href="../app/view/productsRedirect.php"><h4>Digital Camera</h4></a>
                                 <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                 <h5>220$</h5>
                                 <a href="../cart.html" class="btn btn-cart">
@@ -91,14 +89,14 @@
                                 </a>
 
                             </div>
-                            <a href="../app/view/products.php">
+                            <a href="../app/view/productsRedirect.php">
                                 <img src="images/product-slide/product1.png" class="img img-responsive" alt="Product1">
                             </a>
                         </div> <!-- Single Featured Item -->
 
                         <div class="item featured3">
                             <div class="item-full animated featured3-inner  width0">
-                                <a href="../app/view/products.php"><h4>Digital Camera</h4></a>
+                                <a href="../app/view/productsRedirect.php"><h4>Digital Camera</h4></a>
                                 <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                 <h5>200$</h5>
                                 <a href="../cart.html" class="btn btn-cart">
@@ -106,14 +104,14 @@
                                 </a>
 
                             </div>
-                            <a href="../app/view/products.php">
+                            <a href="../app/view/productsRedirect.php">
                                 <img src="images/product-slide/product2.png" class="img img-responsive" alt="Product1">
                             </a>
                         </div> <!-- Single Featured Item -->
 
                         <div class="item featured4">
                             <div class="item-full animated featured4-inner  width0">
-                                <a href="../app/view/products.php"><h4>Digital Camera</h4></a>
+                                <a href="../app/view/productsRedirect.php"><h4>Digital Camera</h4></a>
                                 <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                 <h5>200$</h5>
                                 <a href="../cart.html" class="btn btn-cart">
@@ -121,14 +119,14 @@
                                 </a>
 
                             </div>
-                            <a href="../app/view/products.php">
+                            <a href="../app/view/productsRedirect.php">
                                 <img src="images/product-slide/product3.png" class="img img-responsive" alt="Product1">
                             </a>
                         </div> <!-- Single Featured Item -->
 
                         <div class="item featured5">
                             <div class="item-full animated featured5-inner  width0">
-                                <a href="../app/view/products.php"><h4>Digital Camera</h4></a>
+                                <a href="../app/view/productsRedirect.php"><h4>Digital Camera</h4></a>
                                 <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                 <h5>200$</h5>
                                 <a href="../cart.html" class="btn btn-cart">
@@ -136,7 +134,7 @@
                                 </a>
 
                             </div>
-                            <a href="../app/view/products.php">
+                            <a href="../app/view/productsRedirect.php">
                                 <img src="images/product-slide/product4.png" class="img img-responsive" alt="Product1">
                             </a>
                         </div> <!-- Single Featured Item -->
@@ -361,10 +359,8 @@
 
 
 
-
-
                     </div> <!-- End Latest products row-->
-                    <a href="../app/view/products.php" class="btn btn-red btn-lg pull-right btn-more wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">
+                    <a href="../app/view/productsRedirect.php" class="btn btn-red btn-lg pull-right btn-more wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">
                         <span>See More products.. </span>
                     </a>
                     <div class="clear"></div>

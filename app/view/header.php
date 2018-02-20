@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: crys_
+ * Date: 16.02.2018
+ * Time: 20:49
+ */
 $file_name = basename($_SERVER['SCRIPT_FILENAME']);
 
 $new_path = "";
@@ -195,7 +201,7 @@ if($file_name != "index.php") {
                                                 </div>
                                             </li>
                                             <li class=""><span class="wsmenu-click02"><i
-                                                            class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#"><i class="fa fa-star "></i> Movies</a>
+                                                            class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#"><i class="fa fa-film "></i> Movies</a>
                                                 <div class="wstitemright clearfix" style="height: auto;">
                                                     <ul class="wstliststy02">
                                                         <li class="wstheading">Latest Movies</li>

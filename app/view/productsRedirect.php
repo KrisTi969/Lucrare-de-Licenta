@@ -1,3 +1,11 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: crys_
+ * Date: 18.02.2018
+ * Time: 13:07
+ */
+?>
 <!DOCTYPE html>
 <html>
 <?php include "head.php"; ?>
@@ -6,9 +14,6 @@
     <div class="wrapper">
         <!-- Header part  -->
         <?php include "header.php";?>
-
-
-
         <div class="content-area prodcuts">
 
             <div class="row">

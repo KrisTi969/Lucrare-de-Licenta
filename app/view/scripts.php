@@ -13,10 +13,7 @@
 <script type="text/javascript" src="../../public/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../../public/js/webslidemenu.js"></script>
 <script type="text/javascript" src="../../public/js/main.js"></script>
-
-
 <script type="text/javascript" src="../../public/js/custom_validations.js"></script>
 <script type="text/javascript" src="../../public/js/imagezoom.js"></script>
 <script type="text/javascript" src="../../public/js/jquery.flexslider.js"></script>
-
 <script type="text/javascript" src="../../public/js/jquery.validate.min.js"></script>
