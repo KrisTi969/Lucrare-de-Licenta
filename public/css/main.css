@@ -657,7 +657,7 @@ a.add-to-cart {
 
 
 
-/*** Services Div ***/
+/*!*** Services Div ***!
 .services {
     padding: 3em 0;
     background: url(../images/services.jpg)no-repeat center 0px;
@@ -700,7 +700,7 @@ a.add-to-cart {
 .services .ftr-top-grids:hover i.fa {
     color: #fff;
 }
-/*** Services Div ***/
+!*** Services Div ***!*/
 
 
 
@@ -954,7 +954,6 @@ h3.item_name {
     color: rgba(229, 35, 37, .7);
     font-size: 2.5em;
     font-weight: bold;
-    font-family: cursive;
 }
 .single-product .single-product-everything {
     margin-top: 10%;

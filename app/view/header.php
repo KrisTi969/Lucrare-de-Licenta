@@ -10,10 +10,10 @@ $file_name = basename($_SERVER['SCRIPT_FILENAME']);
 $new_path = "";
 if($file_name != "index.php") {
     $new_path = "../../public/";
-    $reddirect_link = "../../app/view/";
+    $reddirect_link = "";
 }
 else {
-    $reddirect_link = "";
+    $reddirect_link = "../../Licenta/app/view/";
 }
 ?>
 <div class="header">
@@ -107,7 +107,7 @@ else {
                                                     <ul class="wstliststy02">
                                                         <li><img src="<?php echo $new_path?>./Megamenu_files/ele-menu-img01.jpg" alt=" "></li>
                                                         <li class="wstheading">TVs</li>
-                                                        <li><a href="<?php echo $reddirect_link?>TVs.php?type=4k">4K Ultra HD TVs </a></li>
+                                                        <li><a href="<?php echo $reddirect_link; ?>TVs.php">4K Ultra HD TVs </a></li>
                                                         <li><a href="#">Curved TVs </a></li>
                                                         <li><a href="#">LED TVs</a></li>
                                                         <li><a href="#">LCD TVs</a></li>

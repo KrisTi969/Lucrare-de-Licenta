@@ -25,7 +25,7 @@
                         <h2 class="title-div">Categories</h2>
                                 <li>Electronic Appliances
                             <ul>
-                                    <li><a href="#">TV &amp; Audio</a></li>
+                                    <li><a href="#">TVs</a></li>
                                     <li><a href="#">Camera, Photo &amp; Video </a></li>
                                     <li><a href="#">Cell Phones &amp; Accessories</a></li>
                                     <li><a href="#">Wearable Devices</a></li>

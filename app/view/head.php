@@ -23,6 +23,7 @@ if($file_name != "index.php") {
     <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/bootstrap-datetimepicker.min.css" />
     <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/datepicker.css" />
+    <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/flexslider.css"/>
     <!-- Animate.css -->
     <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/animate.css" />
 
