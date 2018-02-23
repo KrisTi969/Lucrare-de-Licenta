@@ -57,7 +57,7 @@
                                 <div class="forget">
                                     <p class="pull-left"><a href="forgot_password.html">Forgot Password</a></p>
                                     <p class="pull-right" style="color: honeydew">Not a memeber yet ?<br>
-                                        <a href="register.html">Create a new account</a>
+                                        <a href="register.php">Create a new account</a>
                                     </p>
                                     <div class="clearfix"></div>
                                 </div>

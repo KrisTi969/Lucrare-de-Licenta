@@ -6,7 +6,9 @@
  * Time: 13:57
  */
 
-$actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_GET['type'];
+if(isset($_GET['type'])) {
+    $actual_link = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . "?type=" . $_GET['type'];
+}
 
 ?>
 
@@ -171,7 +173,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -198,7 +200,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -223,7 +225,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -248,7 +250,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -273,7 +275,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -298,7 +300,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -323,7 +325,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -348,7 +350,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -373,7 +375,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -398,7 +400,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -426,7 +428,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -452,7 +454,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -477,7 +479,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -502,7 +504,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -527,7 +529,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>
@@ -552,7 +554,7 @@ $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."?type=".$_G
                                                     </a>
 
                                                     <div class="product-price">
-                                                        <a href="product_single.html">DSLR Camera</a><br />
+                                                        <a href="product_single.html">TV</a><br />
                                                         <span class="prev-price">
                                                     <del>200$</del>
                                                 </span>

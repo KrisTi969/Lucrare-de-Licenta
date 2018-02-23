@@ -17,18 +17,17 @@
                     <div class="col-sm-3">
                         <h2>My Account</h2>
                         <ul>
-                            <li><a href="account.html">Account Control Panel</a></li>
-                            <li><a href="account_information.html">Personal Information</a></li>
+                            <li><a href="account.php">Account Control Panel</a></li>
+                            <li><a href="account_information.php">Personal Information</a></li>
                             <li><a href="account_carts.html">My All Orders</a></li>
-                            <li class="active"><a href="account_carts.html">My Carts Products</a></li>
+                            <li class="active"><a href="account_cart.php">My Carts Products</a></li>
                             <li><a href="account_reviews.html">My Reviews and Ratings</a></li>
-                            <li><a href="account_newsletter.html">Account Newsletter and Other</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-9">
                         <h2>Account Carts</h2>
                         <div class="cart-page">
-                            <form action="checkout.html" method="post">
+                            <form action="checkout.php" method="post">
                                 <table class="table">
                                     <thead>
                                     <tr>
@@ -88,7 +87,7 @@
                                     </tr>
                                     <tr>
                                         <td colspan="4">
-                                            <input type="submit" class="btn btn-yellow btn-lg pull-right margin-bottom-20" name="" value="Continue to Checkout" />
+                                            <input type="submit"  class="btn btn-yellow btn-lg pull-right margin-bottom-20" name="" value="Continue to Checkout" />
                                             <a href="products.html" class="btn btn-success btn-lg pull-right margin-right-20">
                                                 <i class="fa fa-plus"></i> Add More Products</a>
 

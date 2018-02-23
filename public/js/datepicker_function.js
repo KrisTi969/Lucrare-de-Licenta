@@ -3,7 +3,7 @@
 		$(".date").datetimepicker({
         format:'DD-MM-YYYY',
 			icons: {
-					time: "fa fa-clock-o",
+        	    time: "fa fa-clock-o",
 				date: "fa fa-calendar",
 				up: "fa fa-arrow-up",
 				down: "fa fa-arrow-down"
@@ -28,19 +28,17 @@
 		if (format) {
 			value = parseDate(value);
 		}
-
 		var timestamp = Date.parse(value);
 
 		return isNaN(timestamp) == false;
    };
-   
-   var parseDate = function(value) {
-		var m = value.match(/^(\d{1,2})(\/|-)?(\d{1,2})(\/|-)?(\d{4})$/);
-		if (m)
-			value = m[5] + '-' + ("00" + m[3]).slice(-2) + '-' + ("00" + m[1]).slice(-2);
 
+   var parseDate = function(value) {
+/*		var m = value.match(/^(\d{1,2})(\/|-)?(\d{1,2})(\/|-)?(\d{4})$/);
+		if (m)
+			value = m[5] + '-' + ("00" + m[3]).slice(-2) + '-' + ("00" + m[1]).slice(-2);*/
 		return value;
    };
-   
+
    bindDatePicker();
  });

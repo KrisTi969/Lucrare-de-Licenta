@@ -37,4 +37,6 @@ if($file_name != "index.php") {
     <!-- Main css link -->
     <link type="text/css" rel="stylesheet" href="<?php echo $new_path?>css/main.css" />
 
+    <script type="text/javascript" src="<?php echo $new_path?>js/jquery.min.js"></script>
+
 </head>

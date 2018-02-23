@@ -161,7 +161,7 @@
                                     </a>
 
                                     <div class="product-price">
-                                        <a href="../product_single.html">DSLR Camera</a><br />
+                                        <a href="../product_single.html">TV</a><br />
                                         <span class="prev-price">
                                     <del>200$</del>
                                 </span>
@@ -186,7 +186,7 @@
                                     </a>
 
                                     <div class="product-price">
-                                        <a href="../product_single.html">DSLR Camera</a><br />
+                                        <a href="../product_single.html">TV</a><br />
                                         <span class="prev-price">
                                     <del>200$</del>
                                 </span>
@@ -211,7 +211,7 @@
                                     </a>
 
                                     <div class="product-price">
-                                        <a href="../product_single.html">DSLR Camera</a><br />
+                                        <a href="../product_single.html">TV</a><br />
                                         <span class="prev-price">
                                     <del>200$</del>
                                 </span>
@@ -237,7 +237,7 @@
                                     </a>
 
                                     <div class="product-price">
-                                        <a href="../product_single.html">DSLR Camera</a><br />
+                                        <a href="../product_single.html">TV</a><br />
                                         <span class="prev-price">
                                     <del>200$</del>
                                 </span>
@@ -262,7 +262,7 @@
                                     </a>
 
                                     <div class="product-price">
-                                        <a href="../product_single.html">DSLR Camera</a><br />
+                                        <a href="../product_single.html">TV</a><br />
                                         <span class="prev-price">
                                     <del>200$</del>
                                 </span>
@@ -287,7 +287,7 @@
                                     </a>
 
                                     <div class="product-price">
-                                        <a href="../product_single.html">DSLR Camera</a><br />
+                                        <a href="../product_single.html">TV</a><br />
                                         <span class="prev-price">
                                     <del>200$</del>
                                 </span>
@@ -312,7 +312,7 @@
                                     </a>
 
                                     <div class="product-price">
-                                        <a href="../product_single.html">DSLR Camera</a><br />
+                                        <a href="../product_single.html">TV</a><br />
                                         <span class="prev-price">
                                     <del>200$</del>
                                 </span>
@@ -337,7 +337,7 @@
                                     </a>
 
                                     <div class="product-price">
-                                        <a href="../product_single.html">DSLR Camera</a><br />
+                                        <a href="../product_single.html">TV</a><br />
                                         <span class="prev-price">
                                     <del>200$</del>
                                 </span>

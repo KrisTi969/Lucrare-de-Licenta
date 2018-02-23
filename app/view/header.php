@@ -75,7 +75,7 @@ else {
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel
                             </button>
-                            <a href="checkout.html" class="btn btn-yellow">Check Out</a>
+                            <a href="<?php echo $reddirect_link?>account_cart.php" class="btn btn-yellow">Check Out</a>
                         </div>
                     </div>
 
@@ -102,12 +102,12 @@ else {
                                 <div class="wsshoptabing wtsdepartmentmenu clearfix">
                                     <div class="wsshopwp clearfix" style="height: 421px;">
                                         <ul class="wstabitem clearfix">
-                                            <li class=""><span class="wsmenu-click02"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#"><i class="fa fa-television"></i>Electronic Appliances</a>
+                                            <li class=""><span class="wsmenu-click02"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="<?php echo $reddirect_link?>productsRedirect.php"><i class="fa fa-television"></i>Electronic Appliances</a>
                                                 <div class="wstitemright clearfix" style="height: auto;">
                                                     <ul class="wstliststy02">
                                                         <li><img src="<?php echo $new_path?>./Megamenu_files/ele-menu-img01.jpg" alt=" "></li>
                                                         <li class="wstheading">TVs</li>
-                                                        <li><a href="<?php echo $reddirect_link; ?>TVs.php">4K Ultra HD TVs </a></li>
+                                                        <li><a href="<?php echo $reddirect_link; ?>TVs.php?type=4k">4K Ultra HD TVs </a></li>
                                                         <li><a href="#">Curved TVs </a></li>
                                                         <li><a href="#">LED TVs</a></li>
                                                         <li><a href="#">LCD TVs</a></li>
@@ -306,9 +306,9 @@ else {
 
                             <li class="wsshopmyaccount clearfix"><span class="wsmenu-click"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#" class="wtxaccountlink"><i class="fa fa-align-justify"></i>My Account <i class="fa  fa-angle-down"></i></a>
                                 <ul class="wsmenu-submenu">
-                                    <li><a href="#"><i class="fa fa-black-tie"></i>View Profile</a></li>
+                                    <li><a href="<?php echo $reddirect_link?>account.php"><i class="fa fa-black-tie"></i>View Profile/Log in(!=Logged in)</a></li>
                                     <li><a href="#"><i class="fa fa-heart"></i>My Wishlist</a></li>
-                                    <li><a href="#"><i class="fa fa-bell"></i>Notnification</a></li>
+                                    <li><a href="#"><i class="fa fa-bell"></i>Notifications</a></li>
                                     <li><a href="#"><i class="fa fa-question-circle"></i>Help Center</a></li>
                                     <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
                                 </ul>

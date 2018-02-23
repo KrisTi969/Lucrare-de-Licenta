@@ -28,11 +28,10 @@
                             <h2>My Account</h2>
                             <ul>
                                 <li  class="active"><a href="account.html">Account Control Panel</a></li>
-                                <li><a href="account_information.html">Personal Information</a></li>
-                                <li><a href="account_carts.html">My All Orders</a></li>
-                                <li><a href="account_carts.html">My Carts Products</a></li>
-                                <li><a href="account_reviews.html">My Reviews and Ratings</a></li>
-                                <li><a href="account_newsletter.html">Account Newsletter and Other</a></li>
+                                <li><a href="account_information.php">Personal Information</a></li>
+                                <li><a href="account_orders.php">My Orders(!)</a></li>
+                                <li><a href="account_cart.php">My Cart Products</a></li>
+                                <li><a href="account_reviews.php">My Reviews and Ratings</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-9">

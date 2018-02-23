@@ -1068,7 +1068,7 @@ label.error {
     margin: 3%;
 }
 .check-dots {
-    color: #58c3e8;
+    color: whitesmoke;
     font-weight: bold;
     font-size: 1.5em;
     letter-spacing: 10px;
@@ -1083,13 +1083,13 @@ label.error {
     font-weight: 700;
 }
 #check-one-top{
-    background: #004C48
+    background: darkred;
 }
 #check-two-top{
-    background: #00BBB5
+    background: darkred
 }
 #check-three-top{
-    background: #58C3E8;
+    background: darkred;
 }
 .payment-div{
     border:  1px solid rgba(88, 195, 232, 0.4);
