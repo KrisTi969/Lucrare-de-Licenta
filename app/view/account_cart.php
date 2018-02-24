@@ -163,7 +163,7 @@
                             <h3>Payment Methods</h3>
                             <ul>
                                 <li><i class="fa fa-paypal" aria-hidden="true"></i> Paypal</li>
-                                <li><i class="fa fa-money" aria-hidden="true"></i> Bkash</li>
+                                <li><i class="fa fa-money" aria-hidden="true"></i> visa</li>
                                 <li><i class="fa fa-pie-chart" aria-hidden="true"></i>EMI Conversion</li>
                                 <li><i class="fa fa-gift" aria-hidden="true"></i> E-Gift Voucher</li>
                                 <li><i class="fa fa-credit-card" aria-hidden="true"></i> Debit/Credit Card</li>

@@ -97,7 +97,7 @@
                                     <option value="">Select A payment method</option>
                                     <option value="payment_paypal">Paypal</option>
                                     <option value="payment_stripe">Stripe</option>
-                                    <option value="payment_bkash">Bkash</option>
+                                    <option value="payment_visa">Visa</option>
                                 </select>
                                 <div class="payment-div payment-div-paypal hidden">
                                     <i class="fa fa-cc-paypal"></i> <br />
@@ -107,9 +107,9 @@
                                     <i class="fa fa-cc-stripe"></i> <br />
                                     <a href="" class="btn btn-lg btn-yellow">Payment Via Stripe Now</a>
                                 </div>
-                                <div class="payment-div payment-div-bkash hidden">
-                                    <i>Bkash</i> <br />
-                                    <a href="" class="btn btn-lg btn-yellow">Payment Via Bkash Now</a>
+                                <div class="payment-div payment-div-visa hidden">
+                                    <i class="fa fa-cc-visa"></i> <br />
+                                    <a href="" class="btn btn-lg btn-yellow">Payment Via visa Now</a>
                                 </div>
                             </div>
                         </div>
@@ -260,18 +260,18 @@
             if (payment_method === "payment_paypal") {
                 $('.payment-div-paypal').removeClass('hidden');
                 $('.payment-div-paypal').addClass('animated slideInLeft');
-                $('.payment-div-bkash').addClass('hidden');
+                $('.payment-div-visa').addClass('hidden');
                 $('.payment-div-stripe').addClass('hidden');
             }
             if (payment_method === "payment_stripe") {
                 $('.payment-div-stripe').removeClass('hidden');
                 $('.payment-div-stripe').addClass('animated slideInUp');
                 $('.payment-div-paypal').addClass('hidden');
-                $('.payment-div-bkash').addClass('hidden');
+                $('.payment-div-visa').addClass('hidden');
             }
-            if (payment_method === "payment_bkash") {
-                $('.payment-div-bkash').removeClass('hidden');
-                $('.payment-div-bkash').addClass('animated slideInRight');
+            if (payment_method === "payment_visa") {
+                $('.payment-div-visa').removeClass('hidden');
+                $('.payment-div-visa').addClass('animated slideInRight');
                 $('.payment-div-paypal').addClass('hidden');
                 $('.payment-div-stripe').addClass('hidden');
             }

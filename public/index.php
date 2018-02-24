@@ -54,9 +54,9 @@
         </div> <!-- End Main slider class -->
 
         <div class="featured-products">
-            <div class="container">
+            <div class="container" >
                 <h2 class="title-div wow slideInLeft pull-left" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">Recommanded products</h2><div class="clear"></div>
-                <div class="featured-navigation pull-right">
+                <div class="featured-navigation pull-right width0">
 
                 </div>
                 <div class="clear"></div>
@@ -67,7 +67,7 @@
                         <div class="item featured1">
                             <div class="item-full animated featured1-inner  width0">
                                 <a href="../app/view/productsRedirect.php"><h4>Digital Camera</h4></a>
-                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <p>Detalii</p>
                                 <h5>200$</h5>
                                 <a href="../cart.html" class="btn btn-cart">
                                     Add To Cart
@@ -81,8 +81,8 @@
 
                         <div class="item featured2">
                             <div class="item-full animated featured2-inner  width0">
-                                <a href="../app/view/productsRedirect.php"><h4>Digital Camera</h4></a>
-                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <a href="../app/view/tvProduct.php"><h4>Digital Camera</h4></a>
+                                <p>Detalii</p>
                                 <h5>220$</h5>
                                 <a href="../cart.html" class="btn btn-cart">
                                     Add To Cart
@@ -90,14 +90,14 @@
 
                             </div>
                             <a href="../app/view/productsRedirect.php">
-                                <img src="images/product-slide/product1.png" class="img img-responsive" alt="Product1">
+                                <img src="images/products/4ksamsung6120.jpg" class="img-thumbnail" alt="Product1">
                             </a>
                         </div> <!-- Single Featured Item -->
 
                         <div class="item featured3">
                             <div class="item-full animated featured3-inner  width0">
                                 <a href="../app/view/productsRedirect.php"><h4>Digital Camera</h4></a>
-                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <p>Detalii</p>
                                 <h5>200$</h5>
                                 <a href="../cart.html" class="btn btn-cart">
                                     Add To Cart
@@ -112,7 +112,7 @@
                         <div class="item featured4">
                             <div class="item-full animated featured4-inner  width0">
                                 <a href="../app/view/productsRedirect.php"><h4>Digital Camera</h4></a>
-                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <p>Detalii</p>
                                 <h5>200$</h5>
                                 <a href="../cart.html" class="btn btn-cart">
                                     Add To Cart
@@ -127,7 +127,7 @@
                         <div class="item featured5">
                             <div class="item-full animated featured5-inner  width0">
                                 <a href="../app/view/productsRedirect.php"><h4>Digital Camera</h4></a>
-                                <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                <p>Detalii</p>
                                 <h5>200$</h5>
                                 <a href="../cart.html" class="btn btn-cart">
                                     Add To Cart

@@ -46,8 +46,8 @@
                         </div>
                         <div class="col-md-6 single-top-right">
                             <h3 class="item_name">Samsung Smart TV UE40MU6102K</h3>
-                            <p>Stoc magazin suficient: (10+ buc)</p>
-                            <div class="single-rating">
+                            <p class="Whitish">Stoc magazin suficient: (10+ buc)</p>
+                            <div class="single-rating Whitish">
                                 <ul>
                                     <li><i class="fa fa-star" aria-hidden="true"></i></li>
                                     <li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -61,13 +61,13 @@
                             <div class="single-price">
                                 <ul>
                                     <li class="product-price">$900</li>
-                                    <li><del>1000 €</del></li>
-                                    <li><span class="off">10% OFF</span></li>
-                                    <li>Ends on: June,5th</li>
+                                    <li  class="Whitish"><del>1000 €</del></li>
+                                    <li  class="red"><span class="off">10% OFF</span></li>
+                                    <li class="Whitish">Ends on: June,5th</li>
                                     <li><a href="#" hidden><i class="fa fa-gift" aria-hidden="true"></i> Poate pun CUPON ?</a></li>
                                 </ul>
                             </div>
-                            <p class="single-price-text">Processing Time: Item will be shipped out within 2-3 working days. </p>
+                            <p class="single-price-text Whitish" >Processing Time: Item will be shipped out within 2-3 working days. </p>
                             <form action="#" method="post">
                                 <input type="hidden" name="cmd" value="_cart" />
                                 <input type="hidden" name="add" value="1" />
@@ -102,7 +102,7 @@
                                 <div class="clearfix"></div>
                             </a>
                             <div id="productDescriptionCollapse" class="collapse in collapseDiv">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Detalii despre produs.</p>
                             </div>
                         </div> <!-- End single product extra div -->
 
@@ -137,8 +137,8 @@
                                 <div class="clearfix"></div>
                             </a>
                             <div id="productCollapse" class="collapse collapseDiv">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
+                                <p>Accesorii</p>
+                                </div>
                         </div> <!-- End single product extra div -->
 
 

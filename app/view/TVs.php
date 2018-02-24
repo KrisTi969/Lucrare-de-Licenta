@@ -41,7 +41,7 @@ if(isset($_GET['type'])) {
                                 </div> <!--End Sidebar title div-->
 
                                 <div id="brandCollapse" class="collapse out">
-                                        <input type="search" name="brand_name" class="form-control" value="" placeholder="Type Brand Name" />
+                                        <input type="search" name="brand_name" class="form-control" value="" placeholder="De facut range la price" />
                                         <br>
                                         <a role="button" onclick="addOrUpdateUrlParam('priceMin',0,'priceMax',200)"><span></span>UNDER 200 €</a><br />
                                         <br>
@@ -579,7 +579,7 @@ if(isset($_GET['type'])) {
 
 
                                     </div> <!-- End Latest products row-->
-                                    <a class="btn btn-blue btn-lg pull-right btn-more wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">
+                                    <a class="btn btn-red btn-lg pull-right btn-more wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">
                                         <span>See More products.. </span>
                                     </a>
                                     <div class="clear"></div>
